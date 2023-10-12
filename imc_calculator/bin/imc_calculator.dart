@@ -11,22 +11,20 @@ void main(List<String> arguments) {
     return typedText ?? "";
   }
   double calculateIMC (double peso, double altura) {
-    try {
-          var imc = peso / (altura * altura);
+      var imc = peso / (altura * altura);
       print(imc);
-    } catch (e) {
-      print (e);
+      return imc;
     }
 
-  }
   printConsole("Digite seu nome");
   p1.setNome(readConsole());
   printConsole("Digite sua Altura");
   p1.setAltura(double.parse(readConsole()));
   printConsole("Digite seu peso");
   p1.setPeso(double.parse(readConsole()));
-  calculateIMC(p1.getPeso(), p1.getAltura());
+  var imcPessoa = calculateIMC(p1.getPeso(), p1.getAltura());
+  var nomePessoa = p1.getNome();
 
-  print(p1);
+  print("Olá $nomePessoa seu IMC é $imcPessoa");
 
 }

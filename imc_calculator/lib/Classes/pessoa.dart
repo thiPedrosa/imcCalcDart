@@ -7,7 +7,7 @@ class Pessoa {
     _nome = nome;
   }
 
-  String getNome (String nome) {
+  String getNome () {
     return _nome;
   }
 
@@ -15,7 +15,7 @@ class Pessoa {
     _altura = altura;
   }
 
-  double getAltura (double altura) {
+  double getAltura () {
     return _altura;
   }
 
@@ -23,7 +23,7 @@ class Pessoa {
     _peso = peso;
   }
 
-  double getPeso (double peso) {
+  double getPeso () {
     return _peso;
   }
 
