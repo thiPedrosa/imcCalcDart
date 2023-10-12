@@ -18,7 +18,7 @@ class Pessoa {
   double getAltura (double altura) {
     return _altura;
   }
-  
+
   void setPeso(double peso) {
     _peso = peso;
   }
@@ -27,5 +27,12 @@ class Pessoa {
     return _peso;
   }
 
-
+  @override
+  String toString() {
+    return {
+      "Nome": _nome,
+      "Peso": _peso,
+      "Altura": _altura,
+    }.toString();
+  }
 }
